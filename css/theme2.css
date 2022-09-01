@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+*{
+    font-family: 'League Spartan', sans-serif;
+}
+:root{
+    --bg-color:hsl(0, 0%, 90%);
+    --bg-icon-toggler-or-bg-buttons:hsl(0, 5%, 81%);
+    --bg-toggle-button:hsl(6, 63%, 50%);
+    --bg-screen:hsl(0, 0%, 93%) ;
+    --bg-button:hsl(45, 7%, 89%);
+    --color-button:hsl(60, 10%, 19%);
+    --color-screen:hsl(60, 10%, 19%);
+    --shadow-button:hsl(35, 11%, 61%);
+    --hover-button:hsl(30, 25%, 100%);
+    --color-eq:white;
+    --bg-reset-or-del:hsl(185, 42%, 37%) ;
+    --shadow-reset-or-del:hsl(185, 58%, 25%);
+    --shadow-eq:hsl(25, 99%, 27%);
+    --bg-eq:hsl(25, 98%, 40%);
+    --hover-reset-or-del:hsl(185, 42%, 50%);
+    --hover-eq:hsl(25, 98%, 50%);
+    
+    --logo-or-text-theme-numbers:hsl(60, 10%, 19%);
+}
+body{
+    background-color:var(--bg-color) ;
+
+}
+main{
+    margin: 20px auto;
+    height:500px;
+    width: 400px;
+    margin-top: 200px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.theme-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-right: 10px;
+}
+.logo{
+    margin-left:10px ;
+    font-size: large;
+    font-weight: 700; 
+    color: var(--logo-or-text-theme-numbers)
+}
+h6{
+    margin-right: 10px; 
+    color: var(--logo-or-text-theme-numbers);
+}
+.toggler{
+    position: relative;
+}
+.numbers{
+    font-size: xx-small;
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:var(--logo-or-text-theme-numbers);
+}
+.icon-toggler{
+    background-color: var(--bg-icon-toggler-or-bg-buttons);
+    width: 40px;
+    height: 15px;
+    border-radius: 20px;
+}
+.toggle-button{
+position: absolute;
+width: 10px;
+height: 10px;
+background-color: var(--bg-toggle-button);
+border-radius: 50%;
+top: 25px;
+left: 2px;
+cursor: pointer;
+}
+.screen{
+    height: 6rem;
+    width: 400px;
+    background-color:var(--bg-screen);
+    border-radius: 10px;
+    color: var(--color-screen);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 40px;
+    
+}
+.number-on-screen{
+    margin-right: 20px;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color:  var(--bg-icon-toggler-or-bg-buttons);
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px ;
+    margin: 10px;
+    color: var(--color-button);
+    background-color: var(--bg-button);
+    box-shadow: -3px 3px 0px var(--shadow-button);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size:32px ;
+    transition: 0.2s;
+}
+.button:hover{
+    background-color: var(--hover-button);
+}
+.reset{
+    grid-column: span 2;
+    color: white;
+    background-color:var(--bg-reset-or-del);
+    box-shadow: -3px 3px 0px var(--shadow-reset-or-del);
+    border-radius: 10px;
+    
+}
+.equal{
+    grid-column: span 2;
+    box-shadow: -3px 3px 0px var(--shadow-eq);
+    border-radius: 10px;
+    background-color: var(--bg-eq);
+    color: var(--color-eq);
+}
+.del{
+    color: white;
+    background-color:var(--bg-reset-or-del);
+    box-shadow: -3px 3px 0px var(--shadow-reset-or-del);
+    border-radius: 10px;
+}
+.del:hover,.reset:hover{
+    background-color:var(--hover-reset-or-del) ;
+}
+.equal:hover{
+    background-color:var(--hover-eq) ;
+}
+.button:active{
+margin-top:12px ;
+margin-right:12px ;
+box-shadow: none;
+}
