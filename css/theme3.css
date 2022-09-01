@@ -151,3 +151,29 @@ margin-top:12px ;
 margin-right:12px ;
 box-shadow: none;
 }
+.mul{
+    position: relative;
+    color: var(--bg-button);
+    
+}
+.mul:hover{
+    color:var(--hover-button) ;
+}
+.mul::before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 18px;
+    transform: rotate(45deg);
+    background-color: var(--color-button);
+    
+}
+.mul::after{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 18px;
+    transform: rotate(-45deg);
+    background-color: var(--color-button);
+    
+}
